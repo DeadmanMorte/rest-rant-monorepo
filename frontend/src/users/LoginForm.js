@@ -24,7 +24,9 @@ async function handleSubmit(e) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(credentials)
+        
     })
+    console.log(credentials)
 
     const data = await response.json()
 
